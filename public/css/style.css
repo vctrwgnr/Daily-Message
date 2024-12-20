@@ -1,0 +1,69 @@
+/* General reset and body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+/* Overlay for readability */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+    z-index: 1;
+}
+
+/* Centered message box */
+.message-container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Light semi-transparent background */
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 90%; /* Make it responsive */
+}
+
+/* Styling for message title */
+.message-container h1 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Styling for message text */
+.message-container p {
+    font-size: 1.4em;
+    margin: 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .message-container {
+        padding: 15px 30px;
+    }
+
+    .message-container h1 {
+        font-size: 1.8em;
+    }
+
+    .message-container p {
+        font-size: 1.2em;
+    }
+}
